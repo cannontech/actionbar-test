@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "actionbar-test", "actionbar-test\actionbar-test.csproj", "{126FBC60-655F-424C-93CD-D5F8A74C1D87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "actionbar-test.UITests", "actionbar-test.UITests\actionbar-test.UITests.csproj", "{C2CE5525-6AEF-46C8-9796-04817F47A444}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{126FBC60-655F-424C-93CD-D5F8A74C1D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{126FBC60-655F-424C-93CD-D5F8A74C1D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{126FBC60-655F-424C-93CD-D5F8A74C1D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{126FBC60-655F-424C-93CD-D5F8A74C1D87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2CE5525-6AEF-46C8-9796-04817F47A444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2CE5525-6AEF-46C8-9796-04817F47A444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2CE5525-6AEF-46C8-9796-04817F47A444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2CE5525-6AEF-46C8-9796-04817F47A444}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
