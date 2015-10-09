@@ -31,10 +31,17 @@ namespace actionbartest
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            var addButton = (LinearLayout)ActionBar.CustomView.FindViewById<LinearLayout>(Resource.Id.add);
-            var field = FindViewById<TextView>(Resource.Id.tmp);
+        }
 
-            field.Text = PersonRepository.GetPerson(1).FirstName;
+        protected override void OnStart()
+        {
+            base.OnStart();
+
+            var addButton = (LinearLayout)ActionBar.CustomView.FindViewById<LinearLayout>(Resource.Id.add);
+            var listView = FindViewById<ListView>(Resource.Id.peopleList);
+            var people = PersonRepository.GetAll();
+
+            listView.Adapter = new ArrayAdapter<Person>(this, Android.Resource.Layout.SimpleListItem1, people);
 
             addButton.Click += delegate 
                 {
