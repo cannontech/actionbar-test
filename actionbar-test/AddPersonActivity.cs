@@ -7,16 +7,14 @@ using Android.Widget;
 namespace actionbartest
 {
     [Activity(Label = "AddPerson")]			
-    public class AddPerson : Activity
+    public class AddPersonActivity : Activity
     {
         public IPersonRespository Repo { get; set; }
-        //public ITest Test { get; set; }
      
-        public AddPerson()
+        public AddPersonActivity()
         {
             try
             {
-                //Test = TinyIoC.TinyIoCContainer.Current.Resolve<ITest>();
                 Repo = TinyIoC.TinyIoCContainer.Current.Resolve<IPersonRespository>();
             }
             catch(Exception ex)

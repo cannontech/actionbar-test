@@ -59,9 +59,16 @@
     <Compile Include="Models\Person.cs" />
     <Compile Include="Assets\IPersonRespository.cs" />
     <Compile Include="Assets\PersonRespository.cs" />
-    <Compile Include="AddPerson.cs" />
     <Compile Include="ITest.cs" />
     <Compile Include="Test.cs" />
+    <Compile Include="DrinksActivity.cs" />
+    <Compile Include="AddPersonActivity.cs" />
+    <Compile Include="Models\Drink.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Assets\IDrinkRespository.cs" />
+    <Compile Include="Assets\ICategoryRespository.cs" />
+    <Compile Include="Assets\DrinkRespository.cs" />
+    <Compile Include="Assets\CategoryRespository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -80,6 +87,7 @@
     <AndroidResource Include="Resources\layout\ActionBar.axml" />
     <AndroidResource Include="Resources\values\theme.xml" />
     <AndroidResource Include="Resources\layout\AddPerson.axml" />
+    <AndroidResource Include="Resources\layout\DrinksList.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

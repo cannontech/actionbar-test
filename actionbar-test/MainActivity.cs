@@ -4,7 +4,7 @@ using Android.Widget;
 
 namespace actionbartest
 {
-    [Activity(Label = "actionbar-test", MainLauncher = true, Icon = "@drawable/icon", Theme="@style/CustomActionBarTheme")]
+    [Activity(Label = "Who Drinks What?", MainLauncher = true, Icon = "@drawable/icon", Theme="@style/CustomActionBarTheme")]
     public class MainActivity : Activity
     {
         public IPersonRespository PersonRepository { get; set; }
@@ -30,7 +30,6 @@ namespace actionbartest
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
-
         }
 
         protected override void OnStart()
@@ -43,10 +42,15 @@ namespace actionbartest
 
             listView.Adapter = new ArrayAdapter<Person>(this, Android.Resource.Layout.SimpleListItem1, people);
 
+            listView.ItemClick += delegate
+            {
+                StartActivity(typeof(DrinksActivity));    
+            };
+
             addButton.Click += delegate 
-                {
-                    StartActivity(typeof(AddPerson));
-                };  
+            {
+                StartActivity(typeof(AddPersonActivity));
+            };  
         }
     }
 }
